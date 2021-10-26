@@ -10,7 +10,7 @@ namespace Lab1
             string surname = "Yampolskyi";
             int age = 19;
             int result = 40 - age;
-            Console.WriteLine($"Name: " + name + "\nSurname: " + surname + "\nAge: " + age + "\nYears till 40: " + result);
+            Console.WriteLine("Name: " + name + "\nSurname: " + surname + "\nAge: " + age + "\nYears till 40: " + result);
         }
     }
 }
