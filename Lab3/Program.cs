@@ -25,7 +25,7 @@ namespace Lab3
                 }
             }
 
-            string[] words = newText.Split(" ");
+            string[] words = newText.Split(" ", StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < words.Length; i++)
             {
                 if ((i + 1) % 2 == 0)
@@ -43,7 +43,7 @@ namespace Lab3
 
         public static void TaskTwo(string text)
         {
-            string[] words = text.Split(" ");
+            string[] words = text.Split(" ", StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < words.Length; i++)
             {
                 words[i] = FirstLetterToUpper(words[i].ToLower());
@@ -57,7 +57,7 @@ namespace Lab3
         public static void TaskThree(string text)
         {
             text.ToLower();
-            string[] words = text.Split(" ");
+            string[] words = text.Split(" ", StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < words.Length; i++)
             {
               if (words[i].StartsWith("p"))
